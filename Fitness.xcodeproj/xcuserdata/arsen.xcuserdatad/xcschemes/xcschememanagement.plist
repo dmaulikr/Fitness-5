@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Fitness WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Fitness.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>B8DD69811C0DDAFB009AA8AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B8DD69951C0DDAFB009AA8AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B8DD69A01C0DDAFB009AA8AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B8DD69A91C0DDAFB009AA8AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
