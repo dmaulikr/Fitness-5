@@ -21,6 +21,8 @@
 		B8DD69BF1C0DDAFB009AA8AF /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DD69BE1C0DDAFB009AA8AF /* InterfaceController.swift */; };
 		B8DD69C11C0DDAFB009AA8AF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DD69C01C0DDAFB009AA8AF /* ExtensionDelegate.swift */; };
 		B8DD69C31C0DDAFB009AA8AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8DD69C21C0DDAFB009AA8AF /* Assets.xcassets */; };
+		B8DD69DD1C0EDD11009AA8AF /* Debug.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8DD69DC1C0EDD11009AA8AF /* Debug.plist */; };
+		B8DD69DF1C0EDD19009AA8AF /* Release.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8DD69DE1C0EDD19009AA8AF /* Release.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,11 @@
 		B8DD69C01C0DDAFB009AA8AF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		B8DD69C21C0DDAFB009AA8AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8DD69C41C0DDAFB009AA8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8DD69D91C0DF08D009AA8AF /* Project.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		B8DD69DA1C0DF09E009AA8AF /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		B8DD69DB1C0DF0A9009AA8AF /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		B8DD69DC1C0EDD11009AA8AF /* Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Debug.plist; sourceTree = "<group>"; };
+		B8DD69DE1C0EDD19009AA8AF /* Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Release.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,10 +147,10 @@
 			isa = PBXGroup;
 			children = (
 				B8DD69841C0DDAFB009AA8AF /* Fitness */,
-				B8DD69991C0DDAFB009AA8AF /* FitnessTests */,
-				B8DD69A41C0DDAFB009AA8AF /* FitnessUITests */,
 				B8DD69AE1C0DDAFB009AA8AF /* Fitness WatchKit App */,
 				B8DD69BD1C0DDAFB009AA8AF /* Fitness WatchKit Extension */,
+				B8DD69991C0DDAFB009AA8AF /* FitnessTests */,
+				B8DD69A41C0DDAFB009AA8AF /* FitnessUITests */,
 				B8DD69831C0DDAFB009AA8AF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -163,12 +170,13 @@
 		B8DD69841C0DDAFB009AA8AF /* Fitness */ = {
 			isa = PBXGroup;
 			children = (
+				B8DD69D81C0DF050009AA8AF /* Config Files */,
 				B8DD69851C0DDAFB009AA8AF /* AppDelegate.swift */,
-				B8DD69871C0DDAFB009AA8AF /* ViewController.swift */,
-				B8DD69891C0DDAFB009AA8AF /* Main.storyboard */,
 				B8DD698C1C0DDAFB009AA8AF /* Assets.xcassets */,
-				B8DD698E1C0DDAFB009AA8AF /* LaunchScreen.storyboard */,
 				B8DD69911C0DDAFB009AA8AF /* Info.plist */,
+				B8DD698E1C0DDAFB009AA8AF /* LaunchScreen.storyboard */,
+				B8DD69891C0DDAFB009AA8AF /* Main.storyboard */,
+				B8DD69871C0DDAFB009AA8AF /* ViewController.swift */,
 			);
 			path = Fitness;
 			sourceTree = "<group>";
@@ -194,9 +202,9 @@
 		B8DD69AE1C0DDAFB009AA8AF /* Fitness WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
-				B8DD69AF1C0DDAFB009AA8AF /* Interface.storyboard */,
 				B8DD69B21C0DDAFB009AA8AF /* Assets.xcassets */,
 				B8DD69B41C0DDAFB009AA8AF /* Info.plist */,
+				B8DD69AF1C0DDAFB009AA8AF /* Interface.storyboard */,
 			);
 			path = "Fitness WatchKit App";
 			sourceTree = "<group>";
@@ -204,12 +212,24 @@
 		B8DD69BD1C0DDAFB009AA8AF /* Fitness WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				B8DD69BE1C0DDAFB009AA8AF /* InterfaceController.swift */,
-				B8DD69C01C0DDAFB009AA8AF /* ExtensionDelegate.swift */,
 				B8DD69C21C0DDAFB009AA8AF /* Assets.xcassets */,
+				B8DD69C01C0DDAFB009AA8AF /* ExtensionDelegate.swift */,
 				B8DD69C41C0DDAFB009AA8AF /* Info.plist */,
+				B8DD69BE1C0DDAFB009AA8AF /* InterfaceController.swift */,
 			);
 			path = "Fitness WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B8DD69D81C0DF050009AA8AF /* Config Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8DD69D91C0DF08D009AA8AF /* Project.xcconfig */,
+				B8DD69DA1C0DF09E009AA8AF /* Debug.xcconfig */,
+				B8DD69DB1C0DF0A9009AA8AF /* Release.xcconfig */,
+				B8DD69DE1C0EDD19009AA8AF /* Release.plist */,
+				B8DD69DC1C0EDD11009AA8AF /* Debug.plist */,
+			);
+			path = "Config Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +383,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8DD69DD1C0EDD11009AA8AF /* Debug.plist in Resources */,
+				B8DD69DF1C0EDD19009AA8AF /* Release.plist in Resources */,
 				B8DD69901C0DDAFB009AA8AF /* LaunchScreen.storyboard in Resources */,
 				B8DD698D1C0DDAFB009AA8AF /* Assets.xcassets in Resources */,
 				B8DD698B1C0DDAFB009AA8AF /* Main.storyboard in Resources */,
@@ -469,6 +491,7 @@
 				B8DD698A1C0DDAFB009AA8AF /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		B8DD698E1C0DDAFB009AA8AF /* LaunchScreen.storyboard */ = {
@@ -477,6 +500,7 @@
 				B8DD698F1C0DDAFB009AA8AF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		B8DD69AF1C0DDAFB009AA8AF /* Interface.storyboard */ = {
@@ -485,6 +509,7 @@
 				B8DD69B01C0DDAFB009AA8AF /* Base */,
 			);
 			name = Interface.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -492,6 +517,7 @@
 /* Begin XCBuildConfiguration section */
 		B8DD69C51C0DDAFB009AA8AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8DD69D91C0DF08D009AA8AF /* Project.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -536,6 +562,7 @@
 		};
 		B8DD69C61C0DDAFB009AA8AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8DD69D91C0DF08D009AA8AF /* Project.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -573,6 +600,7 @@
 		};
 		B8DD69C81C0DDAFB009AA8AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8DD69DA1C0DF09E009AA8AF /* Debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Fitness WatchKit Extension/Info.plist";
@@ -588,6 +616,7 @@
 		};
 		B8DD69C91C0DDAFB009AA8AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8DD69DB1C0DF0A9009AA8AF /* Release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Fitness WatchKit Extension/Info.plist";
@@ -603,6 +632,7 @@
 		};
 		B8DD69CC1C0DDAFB009AA8AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8DD69DA1C0DF09E009AA8AF /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -620,6 +650,7 @@
 		};
 		B8DD69CD1C0DDAFB009AA8AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8DD69DB1C0DF0A9009AA8AF /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -637,6 +668,7 @@
 		};
 		B8DD69D01C0DDAFB009AA8AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8DD69DA1C0DF09E009AA8AF /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -650,6 +682,7 @@
 		};
 		B8DD69D11C0DDAFB009AA8AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8DD69DB1C0DF0A9009AA8AF /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -662,6 +695,7 @@
 		};
 		B8DD69D31C0DDAFB009AA8AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8DD69DA1C0DF09E009AA8AF /* Debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FitnessTests/Info.plist;
@@ -674,6 +708,7 @@
 		};
 		B8DD69D41C0DDAFB009AA8AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8DD69DB1C0DF0A9009AA8AF /* Release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FitnessTests/Info.plist;
@@ -686,6 +721,7 @@
 		};
 		B8DD69D61C0DDAFB009AA8AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8DD69DA1C0DF09E009AA8AF /* Debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = FitnessUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -698,6 +734,7 @@
 		};
 		B8DD69D71C0DDAFB009AA8AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8DD69DB1C0DF0A9009AA8AF /* Release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = FitnessUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -727,6 +764,7 @@
 				B8DD69C91C0DDAFB009AA8AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8DD69CB1C0DDAFB009AA8AF /* Build configuration list for PBXNativeTarget "Fitness WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -735,6 +773,7 @@
 				B8DD69CD1C0DDAFB009AA8AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8DD69CF1C0DDAFB009AA8AF /* Build configuration list for PBXNativeTarget "Fitness" */ = {
 			isa = XCConfigurationList;
@@ -743,6 +782,7 @@
 				B8DD69D11C0DDAFB009AA8AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8DD69D21C0DDAFB009AA8AF /* Build configuration list for PBXNativeTarget "FitnessTests" */ = {
 			isa = XCConfigurationList;
@@ -751,6 +791,7 @@
 				B8DD69D41C0DDAFB009AA8AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8DD69D51C0DDAFB009AA8AF /* Build configuration list for PBXNativeTarget "FitnessUITests" */ = {
 			isa = XCConfigurationList;
@@ -759,6 +800,7 @@
 				B8DD69D71C0DDAFB009AA8AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
