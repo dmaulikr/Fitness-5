@@ -1,0 +1,14 @@
+disabled_rules:
+  - control_statement
+  - force_cast
+  - leading_whitespace
+  - line_length
+  - nesting
+  - operator_whitespace
+  - return_arrow_whitespace
+  - todo
+  - trailing_newline
+  - trailing_whitespace
+  - type_body_length
+  - type_name
+  - variable_name
